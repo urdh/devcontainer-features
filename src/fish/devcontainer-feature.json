@@ -1,0 +1,33 @@
+{
+    "id": "fish",
+    "version": "1.0.0",
+    "name": "fish (via Github Releases)",
+    "documentationURL": "http://github.com/urdh/devcontainer-features/tree/main/src/fish",
+    "description": "fish is a smart and user-friendly command line shell for macOS, Linux, and the rest of the family.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "fisher": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Fisher plugin manager"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "fish"
+            }
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/gh-release",
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
