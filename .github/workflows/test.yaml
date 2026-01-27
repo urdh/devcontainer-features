@@ -13,6 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
+          - bat
           - fish
         baseImage:
           - debian:latest
@@ -34,6 +35,7 @@ jobs:
     strategy:
       matrix:
         features:
+          - bat
           - fish
     steps:
       - uses: actions/checkout@v4
