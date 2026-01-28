@@ -1,0 +1,20 @@
+{
+    "id": "diff-so-fancy",
+    "version": "1.0.0",
+    "name": "diff-so-fancy (via Github Releases)",
+    "documentationURL": "http://github.com/urdh/devcontainer-features/tree/main/src/diff-so-fancy",
+    "description": "diff-so-fancy strives to make your diffs human readable instead of machine readable.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/gh-release"
+    ]
+}

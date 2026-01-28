@@ -14,6 +14,7 @@ jobs:
       matrix:
         features:
           - bat
+          - diff-so-fancy
           - fish
         baseImage:
           - debian:latest
@@ -36,6 +37,7 @@ jobs:
       matrix:
         features:
           - bat
+          - diff-so-fancy
           - fish
     steps:
       - uses: actions/checkout@v4
