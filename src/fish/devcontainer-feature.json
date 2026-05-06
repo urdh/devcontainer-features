@@ -17,6 +17,11 @@
             "type": "boolean",
             "default": true,
             "description": "Install Fisher plugin manager"
+        },
+        "pure": {
+            "type": "boolean",
+            "default": false,
+            "description": "Install the pure-fish/pure fisher plugin"
         }
     },
     "customizations": {
