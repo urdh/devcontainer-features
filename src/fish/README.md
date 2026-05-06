@@ -17,6 +17,7 @@ fish is a smart and user-friendly command line shell for macOS, Linux, and the r
 |-----|-----|-----|-----|
 | version | Select the version to install. | string | latest |
 | fisher | Install Fisher plugin manager | boolean | true |
+| pure | Install the pure-fish/pure fisher plugin | boolean | false |
 
 
 
