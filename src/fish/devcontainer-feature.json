@@ -1,6 +1,6 @@
 {
     "id": "fish",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "name": "fish (via Github Releases)",
     "documentationURL": "http://github.com/urdh/devcontainer-features/tree/main/src/fish",
     "description": "fish is a smart and user-friendly command line shell for macOS, Linux, and the rest of the family.",

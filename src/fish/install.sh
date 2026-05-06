@@ -59,10 +59,8 @@ if [ "${FISHER:-"true"}" = "true" ]; then
     # Then optionally install & configure the pure prompt
     if [ "${PURE:-"false"}" = "true" ]; then
       fish -c 'fisher install pure-fish/pure'
-      fish ./pure-config.fish
       if [ "${USERNAME}" != "root" ]; then
           su "${USERNAME}" -c 'fish -c "fisher install pure-fish/pure"'
-          su "${USERNAME}" -c 'fish -c ./pure-config.fish'
       fi
     fi
 fi
