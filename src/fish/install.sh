@@ -55,6 +55,16 @@ if [ "${FISHER:-"true"}" = "true" ]; then
         su "${USERNAME}" -c 'fish -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"'
     fi
     fish -c "fisher -v"
+
+    # Then optionally install & configure the pure prompt
+    if [ "${PURE:-"false"}" = "true" ]; then
+      fish -c 'fisher install pure-fish/pure'
+      fish ./pure-config.fish
+      if [ "${USERNAME}" != "root" ]; then
+          su "${USERNAME}" -c 'fish -c "fisher install pure-fish/pure"'
+          su "${USERNAME}" -c 'fish -c ./pure-config.fish'
+      fi
+    fi
 fi
 
 echo 'Done!'

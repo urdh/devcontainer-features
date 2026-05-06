@@ -1,6 +1,6 @@
 {
     "id": "fish",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "fish (via Github Releases)",
     "documentationURL": "http://github.com/urdh/devcontainer-features/tree/main/src/fish",
     "description": "fish is a smart and user-friendly command line shell for macOS, Linux, and the rest of the family.",
@@ -17,6 +17,11 @@
             "type": "boolean",
             "default": true,
             "description": "Install Fisher plugin manager"
+        },
+        "pure": {
+            "type": "boolean",
+            "default": false,
+            "description": "Install the pure-fish/pure fisher plugin"
         }
     },
     "customizations": {
